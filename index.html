@@ -1,0 +1,2189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netflix Çalışma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/NetflixSansBold.ttf">
+  </head>
+  <body>
+   <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-light fixed-top navbar-dark bg-dark text-white" style="background-color: rgb(20, 20, 20) !important;">
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand logo" href="#"><svg viewBox="0 0 111 30" data-uia="netflix-logo" class="svg-icon svg-icon-netflix-logo" aria-hidden="true" focusable="false"><g id="netflix-logo"><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path></g></svg></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="font-size: 14px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Diziler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Filimler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Yeni ve Popüler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Listem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Dile Göre Göz At</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li>                                        
+                    <form>
+                       <div id="box">
+                           <input type="text" id="search">
+                           <a href="#search"><i class="fa fa-search"></i></a>
+                       </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Çocuk</a>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-bell"></i>
+                    </a>
+                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" id="navbardropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="img/prfl1.png" alt="" style="border-radius: 15px;">
+                    </a>
+                    <ul class="dropdown-menu text-white  bg-opacity-0" id="navbardropdown2" style="background:rgb(20, 20, 20) ;">
+                      <li><a class="dropdown-item text-white" href="#"><img src="img/prfl2.png" alt="" style="border-radius: 15px;"> Şirin</a></li>
+                      <li><a class="dropdown-item text-white" href="#"><img src="img/prfl3.png" alt="" style="border-radius: 15px;"> Leyla</a></li>
+                      <li><a class="dropdown-item text-white" href="#"><img src="img/prfl4.png" alt="" style="border-radius: 15px;"> Çocuk</a></li>
+                      <li><a class="dropdown-item text-white" href="#"><i class="bi bi-pencil ms-2" c></i> Profil Yönetimi</a></li>
+                      <li><a class="dropdown-item text-white" href="#"><i class="bi bi-person ms-2 w-100"></i> Hesap</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-white" href="#">Netflix Oturumunu Kapat</a></li>
+                    </ul>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar finish -->
+      <!-- Banner -->
+      <div class="banner" id="banner">
+        <video id="video" class="banner" poster="img/bgkimlik.webp" style="pointer-events: none;">
+            <source src="img/Kimlik.mp4" type="video/mp4">
+        </video>
+        <div class="banner_contents">
+            <h1 class="banner_title" style="font-size: 100px;">KİMLİK</h1>
+            <div class="banner_buttons">
+                <button class="banner_button" id="btnPlayPause" accesskey="p" onclick="playPauseVideo();">Play</button>
+                <button class="banner_button">My List</button>
+            </div>
+            <div class="banner_desc">
+                Şiddetli bir fırtına sırasında çöldeki ıssız bir motelde mahsur kalan on yabancı, aralarındaki katilin kim olduğunu belirlemeye çalışırken birer birer hedef hâline gelir.
+            </div>  
+            </div>
+            
+                 
+      </div>
+<!-- Card -->
+      <div class="div contanier-fluid p-5 mb-5 mt-n5">
+        <h3 class="text-white mb-4"><a href="#" class="text-white text-decoration-none">Gündemdekiler</a></h3>
+        <div class="owl-carousel mb-5 text-white">
+            <div><img src="img/cart1.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart2.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart3.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart4.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart5.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart6.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart7.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart8.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart9.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart10.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart11.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-white mb-4"><a href="#" class="text-white text-decoration-none">Netflixte Popüler</a></h3>
+        <div class="owl-carousel mb-5">
+            <div><img src="img/cart12.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart13.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart14.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart15.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/20.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/22.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/23.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/24.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/25.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/26.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/27.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-white mb-4"><a href="#" class="text-white text-decoration-none">Psikolojik Diziler</a></h3>
+        <div class="owl-carousel mb-5">
+            <div><img src="img/28.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/29.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/30.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/31.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/32.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/33.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/34.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/354.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart1.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart2.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart3.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-white mb-4"><a href="#" class="text-white text-decoration-none">Ferhat, İzlemeye Devam Et</a></h3>
+        <div class="owl-carousel mb-5">
+            <div><img src="img/cart4.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart5.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart6.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart7.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart8.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart9.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart10.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart11.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart12.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart13.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart14.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-white mb-4"><a href="#" class="text-white text-decoration-none">Eleştirmenlerden Tam Not Alan Diziler</a></h3>
+        <div class="owl-carousel mb-5">
+            <div><img src="img/cart15.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/20.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/21.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/22.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart1.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/23.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/24.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart1.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/25.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/26.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/27.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-white mb-4"><a href="#" class="text-white text-decoration-none">Ödüllü Diziler</a></h3>
+        <div class="owl-carousel mb-5">
+            <div><img src="img/28.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/29.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/30.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/31.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/32.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/33.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#" class="text-white"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#" class="text-white"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/34.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/354.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart1.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart2.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart3.webp" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="img/cart4.jpg" alt="" class="img-fluid rounded-2">
+                <div class="detail card">
+                    <div class="card-body">
+                        <div class="row g-2">
+                           <div class="col-auto fs-3 text-white">
+                            <a href="#"><i class="bi bi-play-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-plus-circle"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                           </div>
+                           <div class="col-auto fs-3">
+                            <a href="#"><i class="bi bi-hand-thumbs-down"></i></a>
+                           </div>                           
+                           <div class="col-auto ms-auto fs-3">
+                            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-caret-down"></i>
+                            </a>                            
+                           </div>
+                           <div class="col-12">
+                            <p class="mb-0 fs-6">1 sa. 35 dk.</p>
+                            <p class="mb-0 fs-6">Komedi &bull;Kahkaha &bull;Eğlence </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- Card finish -->
+
+        
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 text-white">
+          <div>
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/5HDkw100sXQ?controls=0 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="px-5 py-4">
+            <div class="row">
+            <div class="col-md-8">
+                <p class="fs-6"><span style="color: #46d369;">%94 Eşleşme</span> 1 sa. 35 dk.</p>
+                <p style="font-size: 13px;">Tehdit mektupları, tuhaf komşular ve korkutucu olaylar... Hayallerinin evine taşınan bir ailenin bir kâbusu devraldıklarını fark etmesi fazla uzun sürmeyecektir.</p>
+            </div>
+            <div class="col-md-4">
+                <p class="fs-6">Oyuncu Kadrosu : Naomi Watts &bull;Boobby Cannavale &bull;Jeniffer Coolidge </p>
+                <p class="fs-6">Türler : Komedi &bull;Kahkaha &bull;Eğlence </p>
+            </div>
+            </div>                       
+          </div>
+          <div class="px-5 py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow border-0 bg-dark">
+                        <div class="card-body">
+                            <a href="#"><img src="img/22.jpg" class="card-img-top" alt="..."></a>
+                            <p class="fs-6 lead mt-3">Bir kız prestijli bir özel okuldan kaçırıldığında dosyayı üstlenen cinayet bürosu dedektifi, vakayı çözmek için genç bir gizli servis ajanı ile iş birliği yapar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0 bg-dark">
+                        <div class="card-body">
+                            <a href="#"><img src="img/cart10.jpg" class="card-img-top" alt="..."></a>
+                            <p class="fs-6 lead mt-3">Bir kız prestijli bir özel okuldan kaçırıldığında dosyayı üstlenen cinayet bürosu dedektifi, vakayı çözmek için genç bir gizli servis ajanı ile iş birliği yapar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0 bg-dark">
+                        <div class="card-body">
+                            <a href="#"><img src="img/31.webp" class="card-img-top" alt="..."></a>
+                            <p class="fs-6 lead mt-3">Bir kız prestijli bir özel okuldan kaçırıldığında dosyayı üstlenen cinayet bürosu dedektifi, vakayı çözmek için genç bir gizli servis ajanı ile iş birliği yapar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow border-0 bg-dark">
+                        <div class="card-body">
+                            <a href="#"><img src="img/29.webp" class="card-img-top" alt="..."></a>
+                            <p class="fs-6 lead mt-3">Bir kız prestijli bir özel okuldan kaçırıldığında dosyayı üstlenen cinayet bürosu dedektifi, vakayı çözmek için genç bir gizli servis ajanı ile iş birliği yapar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0 bg-dark">
+                        <div class="card-body">
+                            <a href="#"><img src="img/28.webp" class="card-img-top" alt="..."></a>
+                            <p class="fs-6 lead mt-3">Bir kız prestijli bir özel okuldan kaçırıldığında dosyayı üstlenen cinayet bürosu dedektifi, vakayı çözmek için genç bir gizli servis ajanı ile iş birliği yapar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0 bg-dark">
+                        <div class="card-body">
+                            <a href="#"><img src="img/cart11.jpg" class="card-img-top" alt="..."></a>
+                            <p class="fs-6 lead mt-3">Bir kız prestijli bir özel okuldan kaçırıldığında dosyayı üstlenen cinayet bürosu dedektifi, vakayı çözmek için genç bir gizli servis ajanı ile iş birliği yapar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <!-- Modal finish -->
+  <!-- footer -->
+        <div class="col socialimg mt-3 w-50 d-flex justify-content-center" style="color: white;">
+            <a href="#"><img src="img/facebook.svg" alt="" style="margin-right: 3px;" class="m-3"></a><a href="#"><img src="img/instagram.svg" alt="" style="margin-right: 3px;" class="m-3"></a><a href="#"><img src="img/youtube.svg" alt="" style="margin-right: 3px;" class="m-3"></a><a href="#"><img src="img/twitter.svg" alt="" style="margin-right: 2px;" class="m-3"></a></div>
+        </div>
+ 
+  <footer class="row mt-0 justify-content-center footer2" style="background:rgb(20, 20, 20) ;color: white;">
+    <div class="col-12 mb-3 d-flex justify-content-between me-0">
+      <div class="col mb-3 d-flex justify-content-center me-0 ">
+        
+     
+    <div class="col-2 mb-3" >
+      <ul class="nav flex-column" style="font-size: 13px;">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: gray !important;">Sesli Betimleme</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: gray !important;">Yatırımcı İlişkileri</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: gray !important;">Yasal Hükümler</a></li>
+        <li class="nav-item mb-2 mt-3" style="width: 91px;height: 30px; border: 1px solid gray;text-align: center;display: flex; justify-content: center;"><a href="#" class="nav-link p-0 " style="color: gray!important;">HizmetKodu</a></li>
+      </ul>
+    </div>
+    <div class="col-2 mb-3">
+        <ul class="nav flex-column" style="font-size: 13px;">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 me-5" style="color: gray !important;">Yardım Merkezi</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0  me-5" style="color: gray !important;">İş İmkanları</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: gray !important;">Çerez Tercihleri</a></li>
+      </ul>
+    </div>
+
+    <div class="col-2 mb-3">
+        <ul class="nav flex-column" style="font-size: 13px;">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: gray !important;">Hediye Kartları</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: gray !important;">Kullanım Koşulları</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 me-5" style="color: gray !important;">Kurumsal Bilgiler</a></li>
+      </ul>
+    </div>
+
+    <div class="col-2 mb-3">
+        <ul class="nav flex-column" style="font-size: 13px;">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 me-5" style="color: gray !important;">Medya Merkezi</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: gray !important;">Gizlilik</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: gray !important;">Bize Ulaşın</a></li>
+      </ul>
+    </div>
+
+
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:5,
+        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:false,
+            },
+            1400:{
+                items:6,
+                nav:false,
+            }
+
+        }
+    })
+    player = document.getElementById('video');
+    btnPlayPause = document.getElementById('btnPlayPause');
+
+    player.addEventListener('play', function(){
+        changeButtonType(btnPlayPause ,'Pause');
+    }, false);
+
+    player.addEventListener('Pause', function(){
+        changeButtonType(btnPlayPause, 'Play');
+    }, false) ;
+
+
+    function playPauseVideo(){
+        if (player.paused || player.ended) {
+            changeButtonType(btnPlayPause, 'Pause');
+            player.play();
+        } else {
+            changeButtonType(btnPlayPause , 'Play');
+            player.pause();
+        }
+    }
+    function changeButtonType(btn, value) {
+        btn.title - value;
+        btn.innerHTML - value;
+    }
+
+    var myModalEl = document.getElementById('myModal')
+    myModalEl.addEventListener('hidden.bs.modal', function (event) {
+        // do something...
+    })
+
+</script>
+  </body>
+</html>
